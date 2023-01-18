@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ifpi.bibliotecaif.ListarLivrosDidaticosController">
+   <children>
+      <Group AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <ToolBar layoutY="60.0" prefHeight="40.0" prefWidth="887.0">
+              <items>
+                <Button fx:id="mudarTipoButton" mnemonicParsing="false" onAction="#onMudarTipoButton" text="Ver livros literários" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="tableViewLivro" layoutY="100.0" prefHeight="543.0" prefWidth="887.0">
+              <columns>
+                  <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="tableColumnTitulo" prefWidth="75.0" text="Título" />
+                <TableColumn fx:id="tableColumnAutor" prefWidth="75.0" text="Autor" />
+                  <TableColumn fx:id="tableColumnEditora" prefWidth="75.0" text="Editora" />
+                  <TableColumn fx:id="tableColumnIsbn" prefWidth="75.0" text="ISBN" />
+                  <TableColumn fx:id="tableColumnAssunto" prefWidth="75.0" text="Assunto" />
+              </columns>
+            </TableView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
